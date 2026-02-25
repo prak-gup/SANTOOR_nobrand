@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Convert UP district Excel files into a single JSON for the Santoor dashboard.
+Convert UP district Excel files into a single JSON for the Brand A dashboard.
 
 Sources:
   - UP_District_Final_Numbers.xlsx  (SER, district, raw census stats, confidence)
   - UP_District_Reach_Model.xlsx    (full reach model with CDMI, reach %, targets)
 
 Output:
-  SANTOOR/src/data/up_district_data.json
+  src/data/up_district_data.json
 """
 
 import json
@@ -15,10 +15,10 @@ import os
 import math
 import openpyxl
 
-BASE = "/Users/prakhar/Desktop/Meegrow/Santoor"
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FINAL_NUMBERS = os.path.join(BASE, "UP_District_Final_Numbers.xlsx")
 REACH_MODEL = os.path.join(BASE, "UP_District_Reach_Model.xlsx")
-OUTPUT = os.path.join(BASE, "SANTOOR", "src", "data", "up_district_data.json")
+OUTPUT = os.path.join(BASE, "src", "data", "up_district_data.json")
 
 # Mapping from Excel SER name -> JSON scrKey
 SCR_KEY_MAP = {

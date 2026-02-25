@@ -2002,7 +2002,7 @@ export default function App() {
           letterSpacing: '0.06em',
           textTransform: 'uppercase'
         }}>
-          WIPRO TARGET BRAND © 2026 // DATA COMMAND CENTER
+          TARGET BRAND © 2026 // DATA COMMAND CENTER
         </div>
 
       </div>
