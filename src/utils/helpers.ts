@@ -64,7 +64,7 @@ export const exportToCSV = (
       'Genre',
       'Brand A %',
       'Brand B %',
-      'M.Sandal %',
+      'Brand C %',
       'ATC Index',
       'Gap',
       'Index vs Comp',

@@ -60,7 +60,7 @@ const ChannelTable = ({
             {isKarnataka ? (
               <>
                 {renderHeader('Brand B (C)', 'brandBReach')}
-                {renderHeader('M.Sandal (C)', 'brandCReach')}
+                {renderHeader('Brand C (C)', 'brandCReach')}
               </>
             ) : (
               <>
