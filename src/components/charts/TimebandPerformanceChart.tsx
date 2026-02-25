@@ -20,7 +20,7 @@ interface TimebandPerformanceChartProps {
 
 const COMPETITOR_COLORS: Record<string, string> = {
   'brandD': '#3b82f6',
-  'lux': '#8b5cf6',
+  'brandE': '#8b5cf6',
   'brandB': '#3b82f6',
   'brandC': '#ec4899'
 };
@@ -47,7 +47,7 @@ export const TimebandPerformanceChart: React.FC<TimebandPerformanceChartProps> =
   const chartData = channel.timebands.map(tb => {
     const data: any = {
       timeband: TIMEBAND_DISPLAY_V2[tb.timeband as keyof typeof TIMEBAND_DISPLAY_V2] || tb.timeband,
-      Brand A: tb.brandAReach
+      'Brand A': tb.brandAReach
     };
 
     // Add competitor data based on market
@@ -56,7 +56,7 @@ export const TimebandPerformanceChart: React.FC<TimebandPerformanceChartProps> =
       data['Brand C'] = tb.brandCReach || 0;
     } else {
       data['Brand D'] = tb.brandDReach || 0;
-      data['Lux'] = tb.luxReach || 0;
+      data['Brand E'] = tb.brandEReach || 0;
     }
 
     return data;
@@ -120,7 +120,7 @@ export const TimebandPerformanceChart: React.FC<TimebandPerformanceChartProps> =
           ) : (
             <>
               <Bar dataKey="Brand D" fill={COMPETITOR_COLORS['brandD']} radius={[4, 4, 0, 0]} />
-              <Bar dataKey="Lux" fill={COMPETITOR_COLORS['lux']} radius={[4, 4, 0, 0]} />
+              <Bar dataKey="Brand E" fill={COMPETITOR_COLORS['brandE']} radius={[4, 4, 0, 0]} />
             </>
           )}
         </BarChart>

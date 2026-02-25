@@ -12,7 +12,7 @@ export interface ChannelRecord {
   indexVsBaseline: number;
   indexVsCompetition: number;
   brandDReach?: number;
-  luxReach?: number;
+  brandEReach?: number;
   brandBReach?: number;
   brandCReach?: number;
   atcIndex?: number;
@@ -103,8 +103,8 @@ export function calculateStatus(ch: ChannelRecord): string {
 // PROTECTED CHANNELS: Top performers based on threshold
 // ============================================================
 export function getProtectedChannels(channels: ChannelRecord[], threshold: number): string[] {
-  const withBrand A = channels.filter(ch => ch.brandAReach > 0);
-  const sorted = [...withBrand A].sort((a, b) => b.brandAReach - a.brandAReach);
+  const withBrandA = channels.filter(ch => ch.brandAReach > 0);
+  const sorted = [...withBrandA].sort((a, b) => b.brandAReach - a.brandAReach);
   const cutoff = Math.ceil(sorted.length * (threshold / 100));
   return sorted.slice(0, cutoff).map(ch => ch.channel);
 }

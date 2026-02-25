@@ -315,7 +315,7 @@ export function calculateDistrictChannels(
         ...ch,
         brandAReach: 0,
         brandDReach: 0,
-        luxReach: 0,
+        brandEReach: 0,
         maxCompReach: 0,
         gap: 0,
         indexVsCompetition: 0,
@@ -323,7 +323,7 @@ export function calculateDistrictChannels(
         timebands: ch.timebands?.map(tb => ({
           ...tb,
           brandAReach: 0, brandAShare: 0, brandAOTS: 0,
-          brandDReach: 0, luxReach: 0, maxCompReach: 0, gap: 0,
+          brandDReach: 0, brandEReach: 0, maxCompReach: 0, gap: 0,
         })),
       } as ChannelRecord;
     }
@@ -346,8 +346,8 @@ export function calculateDistrictChannels(
     // Scale reaches
     const brandAReach = +(ch.brandAReach * finalFactor).toFixed(2);
     const brandDReach = ch.brandDReach != null ? +(ch.brandDReach * compFactor1).toFixed(2) : undefined;
-    const luxReach = ch.luxReach != null ? +(ch.luxReach * compFactor2).toFixed(2) : undefined;
-    const maxCompReach = Math.max(brandDReach || 0, luxReach || 0);
+    const brandEReach = ch.brandEReach != null ? +(ch.brandEReach * compFactor2).toFixed(2) : undefined;
+    const maxCompReach = Math.max(brandDReach || 0, brandEReach || 0);
     const gap = +(brandAReach - maxCompReach).toFixed(2);
 
     // Recompute indices
@@ -367,20 +367,20 @@ export function calculateDistrictChannels(
 
       timebands = rawAdjusted.map(tb => {
         const normalizedAdjust = (tb._weight / totalWeight) * rawAdjusted.length;
-        const tbBrand A = +(tb.brandAReach * finalFactor * normalizedAdjust).toFixed(2);
+        const tbBrandA = +(tb.brandAReach * finalFactor * normalizedAdjust).toFixed(2);
         const tbComp = +(tb.maxCompReach * compFactor1 * normalizedAdjust).toFixed(2);
-        const tbBrand D = tb.brandDReach != null ? +(tb.brandDReach * compFactor1 * normalizedAdjust).toFixed(2) : undefined;
-        const tbLux = tb.luxReach != null ? +(tb.luxReach * compFactor2 * normalizedAdjust).toFixed(2) : undefined;
+        const tbBrandD = tb.brandDReach != null ? +(tb.brandDReach * compFactor1 * normalizedAdjust).toFixed(2) : undefined;
+        const tbBrandE = tb.brandEReach != null ? +(tb.brandEReach * compFactor2 * normalizedAdjust).toFixed(2) : undefined;
 
         return {
           ...tb,
-          brandAReach: tbBrand A,
+          brandAReach: tbBrandA,
           brandAShare: +(tb.brandAShare * finalFactor).toFixed(2),
           brandAOTS: +(tb.brandAOTS * finalFactor).toFixed(2),
-          brandDReach: tbBrand D,
-          luxReach: tbLux,
-          maxCompReach: Math.max(tbBrand D || 0, tbLux || 0, tbComp),
-          gap: +(tbBrand A - Math.max(tbBrand D || 0, tbLux || 0, tbComp)).toFixed(2),
+          brandDReach: tbBrandD,
+          brandEReach: tbBrandE,
+          maxCompReach: Math.max(tbBrandD || 0, tbBrandE || 0, tbComp),
+          gap: +(tbBrandA - Math.max(tbBrandD || 0, tbBrandE || 0, tbComp)).toFixed(2),
           _weight: undefined,
         };
       });
@@ -393,7 +393,7 @@ export function calculateDistrictChannels(
       ...ch,
       brandAReach,
       brandDReach,
-      luxReach,
+      brandEReach,
       maxCompReach,
       gap,
       indexVsCompetition,
@@ -408,16 +408,16 @@ export function calculateDistrictSummary(
   district: DistrictRecord,
   channels: ChannelRecord[]
 ): DistrictSummary {
-  const withBrand A = channels.filter(c => c.brandAReach > 0);
+  const withBrandA = channels.filter(c => c.brandAReach > 0);
   const opportunities = channels.filter(c => c.brandAReach === 0 && c.maxCompReach >= 2.0 && c.channelShare >= 1.0);
-  const avgGap = withBrand A.length > 0
-    ? withBrand A.reduce((s, c) => s + c.gap, 0) / withBrand A.length
+  const avgGap = withBrandA.length > 0
+    ? withBrandA.reduce((s, c) => s + c.gap, 0) / withBrandA.length
     : 0;
 
   return {
     cdmiScore: district.cdmiScore,
     reachOverall: district.reachOverall,
-    brandAChannels: withBrand A.length,
+    brandAChannels: withBrandA.length,
     opportunities: opportunities.length,
     avgGap: +avgGap.toFixed(2),
     confidence: district.confidence as 'High' | 'Medium' | 'Low',

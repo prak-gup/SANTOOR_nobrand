@@ -444,7 +444,7 @@ export default function App() {
 
   const getComp = (ch: ChannelRecord, i: number) => {
     if (i === 0) return ch.brandDReach ?? ch.brandBReach ?? 0;
-    return ch.luxReach ?? ch.brandCReach ?? 0;
+    return ch.brandEReach ?? ch.brandCReach ?? 0;
   };
 
   return (
@@ -1759,7 +1759,7 @@ export default function App() {
                                     {ch.brandAReach.toFixed(1)}%
                                   </td>
                                   <td style={{ textAlign: 'right' }}>{(ch.brandDReach ?? 0).toFixed(1)}%</td>
-                                  <td style={{ textAlign: 'right' }}>{(ch.luxReach ?? 0).toFixed(1)}%</td>
+                                  <td style={{ textAlign: 'right' }}>{(ch.brandEReach ?? 0).toFixed(1)}%</td>
                                   <td style={{
                                     fontWeight: 600,
                                     color: ch.gap >= 0 ? 'var(--signal-positive)' : 'var(--signal-negative)',

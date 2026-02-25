@@ -217,7 +217,7 @@ export function parseTimebandData(
           atcIndex: calculateTimebandATCIndex(brandAReach, timeband)
         } : {
           brandDReach: competitorReaches['Brand D'] || 0,
-          luxReach: competitorReaches['Lux'] || 0
+          brandEReach: competitorReaches['Brand E'] || 0
         })
       };
 
@@ -251,7 +251,7 @@ function createEmptyTimeband(timeband: string, market: string): TimebandMetrics 
       atcIndex: 0
     } : {
       brandDReach: 0,
-      luxReach: 0
+      brandEReach: 0
     })
   };
 }
@@ -514,7 +514,7 @@ export function generateSampleTimebandData(
         atcIndex: calculateTimebandATCIndex(brandAReach, timeband)
       } : {
         brandDReach: channel.brandDReach ? channel.brandDReach * compReachMultiplier : 0,
-        luxReach: channel.luxReach ? channel.luxReach * compReachMultiplier : 0
+        brandEReach: channel.brandEReach ? channel.brandEReach * compReachMultiplier : 0
       })
     });
   }

@@ -65,7 +65,7 @@ const ChannelTable = ({
             ) : (
               <>
                 {renderHeader('Brand D (C)', 'brandDReach')}
-                {renderHeader('Lux (C)', 'luxReach')}
+                {renderHeader('Brand E (C)', 'brandEReach')}
               </>
             )}
 
@@ -141,7 +141,7 @@ const ChannelTable = ({
                       {formatPercentage(channel.brandDReach || 0)}
                     </td>
                     <td className="px-8 py-6 text-sm font-bold text-slate-500 italic">
-                      {formatPercentage(channel.luxReach || 0)}
+                      {formatPercentage(channel.brandEReach || 0)}
                     </td>
                   </>
                 )}

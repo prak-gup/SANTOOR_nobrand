@@ -5,7 +5,7 @@ export interface TimebandMetrics {
   brandAShare: number;          // Share % for Brand A
   brandAOTS: number;            // Opportunity to See
   brandDReach?: number;          // Competitor reach (UP/Rest of Maharashtra)
-  luxReach?: number;
+  brandEReach?: number;
   brandBReach?: number;        // Karnataka
   brandCReach?: number;
   maxCompReach: number;          // Max competitor reach in timeband
@@ -148,7 +148,7 @@ export interface ChannelRecord {
 
   // Market-specific competitor reaches
   brandDReach?: number;      // UP/Rest of Maharashtra
-  luxReach?: number;         // UP/Rest of Maharashtra
+  brandEReach?: number;         // UP/Rest of Maharashtra
   brandBReach?: number;    // Karnataka
   brandCReach?: number; // Karnataka
 
