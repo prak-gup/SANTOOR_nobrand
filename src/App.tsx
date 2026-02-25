@@ -1740,8 +1740,8 @@ export default function App() {
                             <th>CHANNEL</th>
                             <th>GENRE</th>
                             <th>TARGET BRAND</th>
-                            <th>GODREJ</th>
-                            <th>LUX</th>
+                            <th>BRAND D</th>
+                            <th>BRAND E</th>
                             <th>GAP</th>
                             <th>STATUS</th>
                           </tr>

@@ -14,7 +14,7 @@ import { TIMEBAND_DISPLAY_V2 } from '../../utils/timebandProcessor';
 
 interface TimebandPerformanceChartProps {
   channel: ChannelRecord;
-  competitors: string[];  // ['brandD', 'lux'] or ['brandB', 'brandC']
+  competitors: string[];  // ['brandD', 'brandE'] or ['brandB', 'brandC']
   market: string;
 }
 
