@@ -15,7 +15,7 @@ Successfully integrated WPP and SYNC logos into the header with theme toggle but
    - Height: 40px (desktop), 32px (tablet), 28px (mobile)
 
 2. **`src/assets/sync-logo.svg`**
-   - Uses fixed `#FF6B00` (Santoor orange) for brand consistency
+   - Uses fixed `#FF6B00` (Brand A orange) for brand consistency
    - Remains vibrant in both themes
    - Height: 40px (desktop), 32px (tablet), 28px (mobile)
 
@@ -25,7 +25,7 @@ Successfully integrated WPP and SYNC logos into the header with theme toggle but
 ┌─────────────────────────────────────────────────────────┐
 │ HEADER                                                  │
 │                                                         │
-│ SANTOOR // TV OPTIMIZER        [WPP] + [SYNC] [Toggle] │
+│ BRAND A // TV OPTIMIZER        [WPP] + [SYNC] [Toggle] │
 │ Multi-market campaign platform                          │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -258,7 +258,7 @@ All updates applied successfully without errors!
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ SANTOOR // TV OPTIMIZER                [WPP] + [SYNC] 🌙/☀️ │
+│ BRAND A // TV OPTIMIZER                [WPP] + [SYNC] 🌙/☀️ │
 │ Multi-market campaign analysis platform                      │
 └──────────────────────────────────────────────────────────────┘
      ↑                                      ↑     ↑  ↑     ↑
@@ -270,7 +270,7 @@ All updates applied successfully without errors!
 
 ```
 ┌────────────────────────────────────┐
-│ SANTOOR // TV OPTIMIZER            │
+│ BRAND A // TV OPTIMIZER            │
 │ Multi-market platform              │
 │                                    │
 │ [WPP] + [SYNC] 🌙/☀️              │

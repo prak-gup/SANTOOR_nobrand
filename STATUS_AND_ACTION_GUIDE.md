@@ -36,19 +36,19 @@
 ### **OPPORTUNITY** +
 - **Meaning**: You're NOT present, but competitors ARE (and it's worth pursuing)
 - **Condition**: 
-  - Santoor Reach = 0%
+  - Brand A Reach = 0%
   - Competitor Reach ≥ 2%
   - Channel Share ≥ 1%
 - **Translation**: "We're missing out - competitors are here and it's a real opportunity"
 
 ### **MONOPOLY** ★
 - **Meaning**: You're present, competitors are NOT
-- **Condition**: Santoor Reach > 0%, Competitor Reach = 0%
+- **Condition**: Brand A Reach > 0%, Competitor Reach = 0%
 - **Translation**: "We own this channel - no competition"
 
 ### **INACTIVE** -
 - **Meaning**: Neither you nor competitors are meaningfully present
-- **Condition**: Both Santoor and Competitor Reach are very low/zero
+- **Condition**: Both Brand A and Competitor Reach are very low/zero
 - **Translation**: "This channel isn't active for anyone"
 
 ---
