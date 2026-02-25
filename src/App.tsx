@@ -44,12 +44,12 @@ interface MarketData {
   channelData: Record<string, ChannelRecord[]>;
 }
 
-interface Brand AData {
+interface BrandAData {
   metadata: { markets: string[] };
   markets: Record<string, MarketData>;
 }
 
-const brandAData = data as Brand AData;
+const brandAData = data as BrandAData;
 
 const REC_ICONS: Record<string, string> = {
   'INCREASE': '↑',

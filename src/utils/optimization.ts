@@ -47,7 +47,7 @@ export function filterRelevantChannels(
 
   return channels.filter(ch => {
     // Tier 1: Active Brand A channels with meaningful presence
-    const isActiveBrand AChannel = ch.brandAReach > 1.0 ||
+    const isActiveBrandAChannel = ch.brandAReach > 1.0 ||
                                    (ch.brandAReach > 0.5 && ch.channelShare > 0.5);
 
     // Tier 2: Real opportunities (aligned with optimization engine)
@@ -60,7 +60,7 @@ export function filterRelevantChannels(
                              ch.brandAReach <= 1.0 &&
                              ch.channelShare > 0.5;
 
-    return isActiveBrand AChannel || isRealOpportunity || isEmergingChannel;
+    return isActiveBrandAChannel || isRealOpportunity || isEmergingChannel;
   });
 }
 

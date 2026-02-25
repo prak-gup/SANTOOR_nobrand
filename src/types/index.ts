@@ -182,7 +182,7 @@ export interface MarketData {
   channelData: { [scr: string]: ChannelRecord[] };
 }
 
-export interface Brand AData {
+export interface BrandAData {
   markets: {
     UP: MarketData;
     Maharashtra: MarketData;
