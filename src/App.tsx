@@ -469,7 +469,7 @@ export default function App() {
                 marginBottom: '8px',
                 letterSpacing: '-0.02em'
               }}>
-                SANTOOR // TV OPTIMIZER
+                TARGET BRAND // TV OPTIMIZER
               </h1>
               <p style={{
                 fontFamily: 'DM Mono, monospace',
@@ -703,7 +703,7 @@ export default function App() {
           </div>
 
           <div className="metric-card" style={{ textAlign: 'center' }}>
-            <div className="metric-label">SANTOOR ACTIVE</div>
+            <div className="metric-label">TARGET BRAND ACTIVE</div>
             <div className="metric-value" style={{ color: 'var(--orange-bright)' }}>{summary.active}</div>
           </div>
 
@@ -838,7 +838,7 @@ export default function App() {
                   {[
                     { key: 'channel', label: 'CHANNEL' },
                     { key: 'genre', label: 'GENRE' },
-                    { key: 'brandAReach', label: 'SANTOOR' },
+                    { key: 'brandAReach', label: 'TARGET BRAND' },
                     { key: 'comp1', label: competitors[0]?.toUpperCase() || 'COMP 1' },
                     { key: 'comp2', label: competitors[1]?.toUpperCase().replace('_', ' ') || 'COMP 2' },
                     ...(market === 'Karnataka' ? [
@@ -1136,7 +1136,7 @@ export default function App() {
                                 <thead>
                                   <tr>
                                     <th style={{ fontSize: '10px' }}>TIMEBAND</th>
-                                    <th style={{ fontSize: '10px' }}>SANTOOR</th>
+                                    <th style={{ fontSize: '10px' }}>TARGET BRAND</th>
                                     <th style={{ fontSize: '10px' }}>COMPETITOR</th>
                                     <th style={{ fontSize: '10px' }}>GAP</th>
                                     <th style={{ fontSize: '10px' }}>SHARE</th>
@@ -1405,7 +1405,7 @@ export default function App() {
                     <tr>
                       <th>CHANNEL</th>
                       <th>GENRE</th>
-                      <th>SANTOOR REACH</th>
+                      <th>TARGET BRAND REACH</th>
                       <th>GAP</th>
                       <th>ACTIONS</th>
                     </tr>
@@ -1486,7 +1486,7 @@ export default function App() {
                                       <thead>
                                         <tr>
                                           <th style={{ fontSize: '10px' }}>TIMEBAND</th>
-                                          <th style={{ fontSize: '10px' }}>SANTOOR</th>
+                                          <th style={{ fontSize: '10px' }}>TARGET BRAND</th>
                                           <th style={{ fontSize: '10px' }}>COMPETITOR</th>
                                           <th style={{ fontSize: '10px' }}>GAP</th>
                                           <th style={{ fontSize: '10px' }}>SHARE</th>
@@ -1739,7 +1739,7 @@ export default function App() {
                           <tr>
                             <th>CHANNEL</th>
                             <th>GENRE</th>
-                            <th>SANTOOR</th>
+                            <th>TARGET BRAND</th>
                             <th>GODREJ</th>
                             <th>LUX</th>
                             <th>GAP</th>
@@ -1822,7 +1822,7 @@ export default function App() {
                             <tr>
                               <th>CHANNEL</th>
                               <th>GENRE</th>
-                              <th>SANTOOR REACH</th>
+                              <th>TARGET BRAND REACH</th>
                               <th>GAP</th>
                               <th>ACTIONS</th>
                             </tr>
@@ -1903,7 +1903,7 @@ export default function App() {
                                                 <thead>
                                                   <tr>
                                                     <th style={{ fontSize: '10px' }}>TIMEBAND</th>
-                                                    <th style={{ fontSize: '10px' }}>SANTOOR</th>
+                                                    <th style={{ fontSize: '10px' }}>TARGET BRAND</th>
                                                     <th style={{ fontSize: '10px' }}>COMPETITOR</th>
                                                     <th style={{ fontSize: '10px' }}>GAP</th>
                                                     <th style={{ fontSize: '10px' }}>SHARE</th>
@@ -2002,7 +2002,7 @@ export default function App() {
           letterSpacing: '0.06em',
           textTransform: 'uppercase'
         }}>
-          WIPRO SANTOOR © 2026 // DATA COMMAND CENTER
+          WIPRO TARGET BRAND © 2026 // DATA COMMAND CENTER
         </div>
 
       </div>

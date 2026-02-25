@@ -1,5 +1,5 @@
 // ============================================================
-// OPTIMIZATION UTILITIES FOR SANTOOR TV OPTIMIZER
+// OPTIMIZATION UTILITIES FOR TARGET BRAND TV OPTIMIZER
 // ============================================================
 
 export interface ChannelRecord {

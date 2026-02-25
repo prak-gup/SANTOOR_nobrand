@@ -20,13 +20,13 @@
       ],
       "competitors": [
         "Brand D",
-        "Lux"
+        "Brand E"
       ],
       "optimizationType": "Reach",
       "marketShare": {
         "Brand A": 4.3,
         "Brand D": 18.2,
-        "Lux": 15.6,
+        "Brand E": 15.6,
         "Dettol": 15.0
       },
       "summaries": {
@@ -19461,13 +19461,13 @@
       ],
       "competitors": [
         "Brand D",
-        "Lux"
+        "Brand E"
       ],
       "optimizationType": "Reach",
       "marketShare": {
         "Brand A": 12.1,
         "Brand D": 18.0,
-        "Lux": 15.0
+        "Brand E": 15.0
       },
       "summaries": {
         "Maharashtra Overall": {

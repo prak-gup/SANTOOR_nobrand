@@ -23,7 +23,7 @@ const DistrictSummaryCards: React.FC<DistrictSummaryCardsProps> = ({ summary }) 
 
       {/* Brand A Channels */}
       <div className="metric-card" style={{ textAlign: 'center' }}>
-        <div className="metric-label">SANTOOR ACTIVE</div>
+        <div className="metric-label">TARGET BRAND ACTIVE</div>
         <div className="metric-value" style={{ color: 'var(--orange-bright)' }}>
           {summary.brandAChannels}
         </div>
